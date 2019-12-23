@@ -1,12 +1,13 @@
 <?php 
 include 'header.php';
-include '../koneksi.php';
 ?>
-		<div class="col-md-9 text-justify" style="background-color:rgba(192,192,192,0.8);min-height:680px;max-height:1000px;overflow:auto;"><br>		
-			<h2><b>Selamat Datang</h2>	
-		    <h2><b>Admin Sistem Informasi Cathering Online</h2>
-		    <h2>Cathering MasJoe</b></h2>	
-	    </div>
+			<div class="col-md-9 cont"><br>		
+				<center>
+					<img src="../welcome.jpg" class="img-responsive">
+					<h1 style="color: blue"><b>Selamat Datang di SI Catering Online</h1>
+					<h1 style="color: blue"><b>Catering MasJoe</h1>	
+				</center>
+			</div>
 <?php 
 include 'footer.php';
 ?>

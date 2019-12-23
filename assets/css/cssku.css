@@ -1,0 +1,45 @@
+.listg{
+	width:635px;height:30px;padding: 10px
+}
+.side-left{
+	margin-left:-10px;
+	margin-right: -20px
+}
+.btn-tmb{
+	margin-right:30px;
+	font-size:15px;
+	text-decoration: none;
+}
+hr{
+	border:10px solid #338ac6;
+}
+.cont-bg{
+	background-color: white;
+}
+.cont-head{
+	padding: 0px 20px
+}
+.cont{
+	background-color:rgba(192,192,192,0.8);
+	max-height: 800px;
+	min-height: 680px;
+	overflow:auto;
+}
+.capt{
+	text-transform: capitalize;	
+}
+th{
+	background-color:#337ab7;
+	color:white;
+}
+.li{
+	background-color:white;
+	border:4px solid #337ab7;
+}
+.bg{
+	background-color:#337ab7;
+}
+.bg-trans{
+	background:none;
+	border:0px solid blue;
+}

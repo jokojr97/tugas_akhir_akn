@@ -1,15 +1,16 @@
 <?php 
 include 'header.php';
-include '../koneksi.php';
 ?>
-		<div class="col-md-9 text-justify" style="background-color:rgba(192,192,192,0.8);min-height:680px;max-height:1000px;overflow:auto;"><br>		
-
-            <h2><b>Daftar Request</b></h2>
-            <hr style="border:10px solid #338ac6;"><br><br> 
-            
+		<div class="col-md-9 text-justify cont"><br>        
+                <div class="row cont-head">
+                    <div class="col-md-12 cont-bg">
+                        <h2><b>Daftar Request</b></h2>
+                        <hr>
+                    </div>
+                </div><br>      
 			<?php
-            $id=$_SESSION['id'];
-            $nama=$_SESSION['username'];
+            $id=$s_username;
+            $nama=$s_nama;
             ?>
             <input type="hidden" class="form-control" name="id_konsumen" value="<?php echo $id ?>">
             <input type="hidden" class="form-control" name="nama_konsumen" value="<?php echo $nama ?>">
@@ -32,8 +33,11 @@ include '../koneksi.php';
                             <?php 
                                 $query1 = mysql_query("select * from transaksi_masuk where id_konsumen='$id' AND status=1");
                                 $n=1;
-                                while ($dt=mysql_fetch_array($query1)){?>
-                                    <tr style="color:gray">     
+                                while ($dt=mysql_fetch_array($query1)){?><?php if ($n%2==0){?>
+                                    <tr style="text-transform:capitalize;" class="info">     
+                                    <?php } else {?>
+                                    <tr style="text-transform:capitalize;" class="active">     
+                                    <?php }?>
                                         <td><center><?php echo $n; ?></center></td>                                   
                                         <td><?php echo $dt['nama_konsumen']; ?></td>
                                         <td><center><?php echo $dt['menu']; ?></center></td>
@@ -45,7 +49,7 @@ include '../koneksi.php';
                                         <center>
                                             <a class="btn btn-sm btn-warning" 
                                                 href="batal.php?id=<?php echo $dt['id_transaksi']?>"">
-                                                <i class="glyphicon glyphicon-remove-sign"></i> Batal&nbsp;&nbsp;&nbsp;
+                                                <i class="glyphicon glyphicon-remove"></i> Batal&nbsp;&nbsp;&nbsp;
                                             </a>
                                         </center>
                                         </td>

@@ -4,7 +4,7 @@ include 'header.php';
             <div class="col-md-9 text-justify cont"><br>
                 <div class="row cont-head">
                     <div class="col-md-12 cont-bg">
-                        <h3><b>Tambah Menu Makanan</b></h3>
+                        <h3><b>Tambah Pengeluaran</b></h3>
                         <hr>
                     </div>
                 </div><br>
@@ -12,24 +12,12 @@ include 'header.php';
                     <fieldset>
                         <div>
                             <label class="col-md-3">
-                                Nama:
+                                Pengeluaran:
                             </label>
                             <div class="col-md-9">
-                                <input type="text" class="form-control" placeholder="Nama" name="nama">
+                                <input type="text" class="form-control" placeholder="Pengeluaran" name="pengeluaran">
                             </div><br><br>
                         </div>        
-
-                        <div>
-        		            <label for="uploadimage" class="col-md-3">
-        		                Foto
-        		            </label>
-        		            <div class="col-md-7">
-        		                <input type="file" name="uploadimage" id="uploadimage">
-        		                <p class="help-block">
-        		                    Format : jpeg, jpg, gif, png
-        		                </p>
-        		            </div>          
-                		</div><br>
                 		<div>
                             <label class="col-md-3">
                                 Harga:
@@ -37,7 +25,7 @@ include 'header.php';
                             <div class="col-md-9">
                                 <input type="text" class="form-control" placeholder="Harga" name="harga">
                             </div><br><br>
-                        </div><br><br>	        
+                        </div>	        
                         <div>
                             <label class="col-md-3">
                                 Jumlah:
@@ -45,7 +33,23 @@ include 'header.php';
                             <div class="col-md-9">
                                 <input type="text" class="form-control" placeholder="Jumlah" name="jumlah">
                             </div><br><br>
-                        </div>        
+                        </div>
+                        <div>
+                            <label class="col-md-3">
+                                Total Harga:
+                            </label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" placeholder="Total Harga" name="total">
+                            </div><br><br>
+                        </div>                
+                        <div>
+                            <label class="col-md-3">
+                                Tanggal:
+                            </label>
+                            <div class="col-md-9">
+                                <input type="date" class="form-control" name="tanggal">
+                            </div><br><br>
+                        </div><br>
                         <div>
                             <div class="col-md-3">
                             </div>
@@ -60,7 +64,7 @@ include 'header.php';
                             <div class="col-md-5" >
                                 <div class="clearfix pull-right" style="margin-right:10px">
                                   <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Tambah</button>
-                                  <a class=" btn btn-default" href="menu_makanan.php"><span class="glyphicon glyphicon-remove"> </span> Batal</a>
+                                  <a class=" btn btn-default" href="transaksi_keluar.php"><span class="glyphicon glyphicon-remove"> </span> Batal</a>
                                   
                                 </div>
                             </div>

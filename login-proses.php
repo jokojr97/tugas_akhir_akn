@@ -42,16 +42,16 @@
 
 		if ($jumlahditemukan == 1){ //kondisi :melihat data per rows dari tabel admin apakah ada(1) atau tidak
 		  $row = mysql_fetch_array($result);//melihatkan perintah query berdasarkan objek oriented
-		  $_SESSION['id'] = $row['id_admin'];
-		  $_SESSION['username'] = $row['nama'];//session menyimpan informasi data (id_admin) pada server 
+		  $_SESSION['username'] = $row['id_admin'];
+		  $_SESSION['nama'] = $row['nama'];//session menyimpan informasi data (id_admin) pada server 
 		  $_SESSION['jk'] = $row['jenis_kelamin'];//session menyimpan informasi data (id_admin) pada server 
 		  $_SESSION['level'] = "admin";//memunculkan session admin karna login sebgai admin
 		  header("location:admin/");//  meredirect ke kehalaman admin/index.php  
 	 	}
 	 	else if ($jumlahditemukankns == 1){
 	 	  $rowkns = mysql_fetch_array($resultkns);//melihatkan perintah query berdasarkan objek oriented
-	 	  $_SESSION['id']=$rowkns['id_konsumen'];
-		  $_SESSION['username'] = $rowkns['nama'];//session menyimpan informasi data (id_admin) pada server browser ynag kemudian akan di gunakan pada halaman lain maupun halamn itu sendiri	  
+	 	  $_SESSION['username']=$rowkns['id_konsumen'];
+		  $_SESSION['nama'] = $rowkns['nama'];//session menyimpan informasi data (id_admin) pada server browser ynag kemudian akan di gunakan pada halaman lain maupun halamn itu sendiri	  
 		  $_SESSION['jk'] = $row['jenis_kelamin'];//session menyimpan informasi data (id_admin) pada server 
 		  $_SESSION['level'] = "konsumen";
 		  header("location:konsumen/");//  meredirect ke kehalaman admin/index.php  
