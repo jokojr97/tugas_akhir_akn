@@ -12,15 +12,14 @@ include 'header.php';
                     <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
                         <thead>
                             <tr>
-                                <th width="5%"><center>No</center></th>
+                                <th width="3%"><center>No</center></th>
                                 <th width="10%"><center>Konsumen</center></th>
-                                <th width="15%"><center>Menu <br>Makanan</center></th>
-                                <th width="15%"><center>Lokasi</center></th>
-                                <th width="6%"><center>jumlah</center></th>
+                                <th width="13%"><center>Menu <br>Makanan</center></th>
+                                <!--<th width="13%"><center>Lokasi</center></th>-->
+                                <th width="7%"><center>Jumlah</center></th>
                                 <th width="15%"><center>Total Harga</center></th>
-                                <th width="14%"><center>Tanggal</center></th>
+                                <th width="13%"><center>Tanggal</center></th>
                                 <th width="20%"><center>Action</center></th>
-
                             </tr>
                         </thead>
                         <tbody>
@@ -36,16 +35,20 @@ include 'header.php';
                                 <td><center><?php echo $n; ?></center></td>                                   
                                 <td><?php echo $dt['nama_konsumen']; ?></td>
                                 <td><center><?php echo $dt['menu']; ?></center></td>
-                                <td style="text-align: center;"><?php echo $dt['lokasi']; ?></td>
+                                <!--<td><center><?php echo $dt['lokasi']; ?></center></td>-->
                                 <td style="text-align: center;"><?php echo $dt['jumlah']; ?></td>
                                 <td style="text-align: center;">Rp. <?php echo $dt['total_harga']; ?></td>
                                 <td style="text-align: center;"><?php echo $dt['tanggal']; ?></td>
                                 <td style="text-align: center;"> 
                                     <center>
-                                        <a class="btn btn-sm btn-danger" 
-                                            href="batal.php?id=<?php echo $dt['id_transaksi']?>"">
-                                            <span class="glyphicon glyphicon-trash"></span> Hapus&nbsp;
-                                        </a>
+                                    <a class="btn btn-sm btn-info" 
+                                        href="detail_transaksi_masuk.php?id=<?php echo $dt['id_transaksi']?>"">
+                                        <i class="glyphicon glyphicon-search"></i> Detail&nbsp;
+                                    </a>
+                                    <a class="btn btn-sm btn-danger" 
+                                        href="hapus_transaksi_masuk.php?id=<?php echo $dt['id_transaksi']?>"">
+                                        <i class="glyphicon glyphicon-trash"></i> Hapus&nbsp;
+                                    </a>
                                     </center>
                                 </td>
                         <?php 

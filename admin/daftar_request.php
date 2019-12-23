@@ -15,12 +15,11 @@ include 'header.php';
                                 <th width="3%"><center>No</center></th>
                                 <th width="10%"><center>Konsumen</center></th>
                                 <th width="13%"><center>Menu <br>Makanan</center></th>
-                                <th width="13%"><center>Lokasi</center></th>
+                                <!--<th width="13%"><center>Lokasi</center></th>-->
                                 <th width="7%"><center>jumlah</center></th>
                                 <th width="15%"><center>Total Harga</center></th>
                                 <th width="13%"><center>Tanggal</center></th>
-                                <th width="25%"><center>Action</center></th>
-
+                                <th width="20%"><center>Action</center></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -36,24 +35,25 @@ include 'header.php';
                                 <td><center><?php echo $n; ?></center></td>                                   
                                 <td><?php echo $dt['nama_konsumen']; ?></td>
                                 <td><center><?php echo $dt['menu']; ?></center></td>
-                                <td><center><?php echo $dt['lokasi']; ?></center></td>
+                                <!--<td><center><?php echo $dt['lokasi']; ?></center></td>-->
                                 <td><center><?php echo $dt['jumlah']; ?></center></td>
                                 <td><center>Rp. <?php echo $dt['total_harga']; ?></center></td>
                                 <td><center><?php echo $dt['tanggal']; ?></center></td>
                                 <td> 
                                 <center>
+                                    <a class="btn btn-sm btn-info" 
+                                        href="detail_daftar_request.php?id=<?php echo $dt['id_transaksi']?>"">
+                                        <i class="glyphicon glyphicon-search"></i> Detail&nbsp;
+                                    </a>
                                     <a class="btn btn-sm btn-danger" 
-                                        href="batal.php?id=<?php echo $dt['id_transaksi']?>"">
+                                        href="hapus_daftar_request.php?id=<?php echo $dt['id_transaksi']?>"">
                                         <i class="glyphicon glyphicon-trash"></i> Hapus&nbsp;
                                     </a>
-                                    <a class="btn btn-sm btn-warning" 
-                                        href="jawab.php?id=<?php echo $dt['id_transaksi']?>"">
-                                        <i class="glyphicon glyphicon-phone"></i> Jawab&nbsp;
-                                    </a><br>
+                                    <!--
                                     <a class="btn btn-sm btn-success" 
                                         href="selesai.php?id=<?php echo $dt['id_transaksi']?>" style="margin-top:5px">
                                         <i class="glyphicon glyphicon-check"></i> Selesai&nbsp;
-                                    </a>
+                                    </a>-->
                                 </center>
                                 </td>
                         <?php 
