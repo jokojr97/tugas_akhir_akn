@@ -42,13 +42,11 @@ include 'header.php';
                         <thead>
                             <tr>
                                 <th width="7%"><center>No</center></th>
-                                <th width="10%"><center>Nama</center></th>
-                                <th width="15%" class="sorting_asc"><center>Alamat</center></th>
-                                <th width="10%"><center>Telpon</center></th>
+                                <th width="20%"><center>Nama</center></th>
                                 <th width="15%"><center>Jenis <br>Kelamin</center></th>
-                                <th width="15%"><center>Email</center></th>
-                                <th width="10"><center>Status</center></th>
-                                <th width="18"><center>Aksi</center> </th>
+                                <th width="20%"><center>Email</center></th>
+                                <th width="15"><center>Status</center></th>
+                                <th width="20"><center>Aksi</center></th>
                             </tr>
                         </thead>
                         </thead>
@@ -64,19 +62,21 @@ include 'header.php';
                         <?php }?>
                                 <td><center><?php echo $no; ?></center></td>
                                 <td><?php echo $dt['nama']; ?></td>
-                                <td><center><?php echo $dt['alamat']; ?></center></td>
-                                <td style="text-align: center;"><?php echo $dt['telpon']; ?></td>
                                 <td style="text-align: center;"><?php echo $dt['jenis_kelamin']; ?></td>
                                 <td style="text-align: center;"><?php echo $dt['email']; ?></td>
                                 <td style="text-align: center;">Admin</td>
                                 <td style="text-align: center;"> 
-                                <center>
-                                    <a class="btn btn-sm btn-danger" 
-                                        href="batal.php?id=<?php echo $dt['id_transaksi']?>"">
-                                        <i class="glyphicon glyphicon-trash"></i> Hapus&nbsp;
-                                    </a>
-                                </center>
-                                </td>
+                                    <center>
+                                        <a class="btn btn-sm btn-info" 
+                                            href="detail_toko.php?id=<?php echo $dt['id_transaksi']?>"">
+                                            <i class="glyphicon glyphicon-search"></i> Detail&nbsp;&nbsp;&nbsp;
+                                        </a>
+                                        <a class="btn btn-sm btn-danger" 
+                                            href="hapus.php?id=<?php echo $dt['id_transaksi']?>"">
+                                            <i class="glyphicon glyphicon-trash"></i> Hapus&nbsp;&nbsp;&nbsp;
+                                        </a>
+                                    </center>
+                                </td>   
                         <?php 
                         $no++;} ?>
 
@@ -91,19 +91,21 @@ include 'header.php';
                         <?php }?>
                                 <td><center><?php echo $no; ?></center></td>
                                 <td><?php echo $dt['nama']; ?></td>
-                                <td><center><?php echo $dt['alamat']; ?></center></td>
-                                <td style="text-align: center;"><?php echo $dt['telpon']; ?></td>
                                 <td style="text-align: center;"><?php echo $dt['jenis_kelamin']; ?></td>
                                 <td style="text-align: center;"><?php echo $dt['email']; ?></td>
-                                <td style="text-align: center;">Konsumen</td>
+                                <td style="text-align: center;">Admin</td>
                                 <td style="text-align: center;"> 
-                                <center>
-                                    <a class="btn btn-sm btn-danger" 
-                                        href="batal.php?id=<?php echo $dt['id_transaksi']?>"">
-                                        <i class="glyphicon glyphicon-trash"></i> Hapus&nbsp;
-                                    </a>
-                                </center>
-                                </td>
+                                    <center>
+                                        <a class="btn btn-sm btn-info" 
+                                            href="detail_toko.php?id=<?php echo $dt['id_transaksi']?>"">
+                                            <i class="glyphicon glyphicon-search"></i> Detail&nbsp;&nbsp;&nbsp;
+                                        </a>
+                                        <a class="btn btn-sm btn-danger" 
+                                            href="hapus.php?id=<?php echo $dt['id_transaksi']?>"">
+                                            <i class="glyphicon glyphicon-trash"></i> Hapus&nbsp;&nbsp;&nbsp;
+                                        </a>
+                                    </center>
+                                </td>   
                         <?php 
                         $no++;} ?>                
                         </tbody>

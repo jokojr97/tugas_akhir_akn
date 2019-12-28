@@ -45,7 +45,7 @@
 				<ul class="nav nav-pills nav-stacked content side-left">
 					<li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span>  Dashboard</a></li>			
 					<li class="li"><a href="beli.php"><span class="glyphicon glyphicon-usd"></span>  Beli</a></li>
-					<li class="li"><a href="daftar_request.php"><span class="glyphicon glyphicon-list"></span>  Daftar Request</a></li>
+					<li class="li"><a href="nota_saya.php"><span class="glyphicon glyphicon-list"></span>  Nota Saya</a></li>
 					<li class="li"><a href="info_toko.php"><span class="glyphicon glyphicon-info-sign"></span>  Info Toko</a></li>        												
 					<li class="li"><a href="ganti_password.php"><span class="glyphicon glyphicon-lock"></span>  Ganti Password</a></li>
 				</ul>

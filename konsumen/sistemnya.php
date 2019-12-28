@@ -8,10 +8,10 @@
 	if ($_SESSION['level']=='admin') {//
 		header('location:../admin/');
 	}
-
 	$s_username=$_SESSION["username"]; //menangkap session username
 	$s_level=$_SESSION["level"]; //menangkap sessio level
 	$s_nama=$_SESSION["nama"]; //menangkap sessio level
+	$s_alamat=$_SESSION["alamat"];
 	$namasistemnya="Catering Masjoe";
 
 	include "../koneksi.php";

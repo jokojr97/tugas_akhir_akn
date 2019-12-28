@@ -1,6 +1,5 @@
 <?php 
 include 'header.php';
-include '../koneksi.php';
 ?>
 			<div class="col-md-9 cont"><br>		
 				<center>

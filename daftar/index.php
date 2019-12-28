@@ -18,7 +18,7 @@
 <html lang="en" class="coming-soon">
 <head>
     <meta charset="utf-8">
-    <title> Login || MeatGO</title>
+    <title> Cathering MasJoe </title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -43,7 +43,7 @@
 
 <body class="focused-form animated-content">
     <div class="container" id="login-form">
-	    <div class="login-logo"><h2><b><i>A</i>plikasi Meatgo</b></h2></div>
+	    <div class="login-logo"><h2><b><i>C</i>athering MasJoe</b></h2></div>
             <div class="row">
 			    <div class="col-md-6 col-md-offset-3">
 				    <div class="panel panel-default">
@@ -162,7 +162,7 @@
                                 <div class="col-md-4">
                                     <div class="clearfix">
                                       <button type="submit" class="btn btn-primary">Daftar</button>
-                                      <a href="../login" class="btn btn-default" ">Cancel</a>
+                                      <a href="../" class="btn btn-default" ">Cancel</a>
                                       
                                     </div>
                                 </div>

@@ -43,13 +43,11 @@ include '../koneksi.php';
                         <thead>
                             <tr>
                                 <th width="7%"><center>No</center></th>
-                                <th width="10%"><center>Nama</center></th>
-                                <th width="20%" class="sorting_asc"><center>Alamat</center></th>
-                                <th width="10%"><center>Telpon</center></th>
-                                <th width="15%"><center>Jenis <br>Kelamin</center></th>
+                                <th width="20%"><center>Nama</center></th>
+                                <th width="20%"><center>Jenis <br>Kelamin</center></th>
                                 <th width="20%"><center>Email</center></th>
-                                <th width="10"><center>Status</center></th>
-                                
+                                <th width="15"><center>Status</center></th>
+                                <th width="10"><center>Aksi</center></th>
                             </tr>
                         </thead>
                         </thead>
@@ -65,11 +63,17 @@ include '../koneksi.php';
                         <?php }?>
                                 <td><center><?php echo $no; ?></center></td>
                                 <td><?php echo $dt['nama']; ?></td>
-                                <td><?php echo $dt['alamat']; ?></td>
-                                <td style="text-align: center;"><?php echo $dt['telpon']; ?></td>
                                 <td style="text-align: center;"><?php echo $dt['jenis_kelamin']; ?></td>
                                 <td style="text-align: center;"><?php echo $dt['email']; ?></td>
                                 <td style="text-align: center;">Admin</td>
+                                <td style="text-align: center;"> 
+                                    <center>
+                                        <a class="btn btn-sm btn-info" 
+                                            href="detail_info_admin.php?id=<?php echo $dt['id_admin']?>"">
+                                            <i class="glyphicon glyphicon-search"></i> Detail&nbsp;&nbsp;&nbsp;
+                                        </a>
+                                    </center>
+                                </td>   
                         <?php 
                         $no++;} ?>
 
@@ -84,12 +88,17 @@ include '../koneksi.php';
                         <?php }?>
                                 <td><center><?php echo $no; ?></center></td>
                                 <td><?php echo $dt['nama']; ?></td>
-                                <td><?php echo $dt['alamat']; ?></td>
-                                <td style="text-align: center;"><?php echo $dt['telpon']; ?></td>
                                 <td style="text-align: center;"><?php echo $dt['jenis_kelamin']; ?></td>
                                 <td style="text-align: center;"><?php echo $dt['email']; ?></td>
                                 <td style="text-align: center;">Konsumen</td>
-                                
+                                <td style="text-align: center;"> 
+                                    <center>
+                                        <a class="btn btn-sm btn-info" 
+                                            href="detail_info.php?id=<?php echo $dt['id_konsumen']?>"">
+                                            <i class="glyphicon glyphicon-search"></i> Detail&nbsp;&nbsp;&nbsp;
+                                        </a>
+                                    </center>
+                                </td>   
                         <?php 
                         $no++;} ?>                
                         </tbody>

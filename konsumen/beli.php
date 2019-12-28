@@ -18,9 +18,17 @@ include '../koneksi.php';
                             <div class="panel-heading" style="text-transform:capitalize;"><b><?php echo $dat['nama_menu']; ?></b></div>
                             <div class="panel-body">
                                 <img class="img-thumbnail" style="width:180px;height:150px" src="../admin/foto/<?php echo $dat['foto'];?>"><br><br>
-                                <p>harga : Rp. <?php echo $dat['harga']; ?></p>
+                                Harga : Rp. <?php echo $dat['harga']; ?>
                                 <div class="text-center">
-                                    <a href="#" class="btn btn-primary">&nbsp;&nbsp;&nbsp; Beli &nbsp;&nbsp;&nbsp;</a>
+                                    <div style="padding: 10px">
+                                        <form action="tambah_beli.php" class="form-horizontal" id="validate-form" method="POST">
+                                            <input type="hidden" name="id" value="<?php echo $dat['id_menu']; ?>">
+                                            <input type="hidden" name="nama" value="<?php echo $dat['nama_menu']; ?>">
+                                            <input type="number" name="jumlah" value="<?php $jumlah=1;echo $jumlah?>" style="width: 50px" class="text-center">
+                                            <input type="hidden" name="harga" value="<?php echo $dat['harga']?>"><br>
+                                            <div style="margin-top: 10px"><button type="submit" class="btn btn-primary">Tambah</button></div>
+                                        </form>                     
+                                    </div>                           
                                 </div>                     
                             </div>       
                         </div>                
