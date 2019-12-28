@@ -45,7 +45,7 @@ include 'header.php';
                                 Satuan:
                             </label>
                             <div class="col-md-9">
-                                <input list="satuan" name="satuan" class="listg" value="<?php echo $data['satuan']?>">
+                                <input class="form-control" list="satuan" name="satuan" value="<?php echo $data['satuan']?>" >
                                 <datalist id="satuan">
                                     <option value="kg">
                                     <option value="btg">

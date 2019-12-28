@@ -50,5 +50,5 @@
 					<li class="li"><a href="ganti_password.php"><span class="glyphicon glyphicon-lock"></span>  Ganti Password</a></li>
 				</ul>
 			</div>
-		<div class="col-md-10"> 
+		<div class="col-md-10" > 
 		<div class="row">&nbsp</div>

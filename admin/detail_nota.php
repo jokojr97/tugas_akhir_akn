@@ -7,8 +7,9 @@ include 'header.php';
                         <h2><b>Nota Pembelian</b></h2>
                         <hr>
                     </div>
+                    
                     <div class="pull-right" style="margin: 10px 20px">
-                        <a class="btn btn-default no-print" href="javascript:printDiv('nota');"><span class="glyphicon glyphicon-print"></span><strong> Print</strong></a>
+                        <a class="btn btn-default" href="javascript:printDiv('nota');"><span class="glyphicon glyphicon-print"></span><strong> Print</strong></a>
                     </div>
                 </div>
 			<?php
@@ -18,17 +19,19 @@ include 'header.php';
                 while ($dt=mysql_fetch_array($query1)){
             
                 $tanggal=$dt['tanggal'];
+                $nama=$dt['konsumen'];
             $no++;
 
         }
             ?>
 			<div class="col-md-12"> 
                 <div class="navbar-form">Konsumen
-                <input type="text" name="nama" value="<?php echo $s_nama?>"  style="width: 100px" class="capt" disabled>
-                <span style="margin-left: 120px"></span> Nota    
+                <input type="text" name="nama" value="<?php echo $nama?>"  style="width: 100px" class="capt" disabled>
+                <div class="pull-right">Nota    
                 <input type="text" name="no_nota" value="<?php echo $id?>" disabled>
                 <input type="text" name="tanggal" value="<?php echo $tanggal?>" disabled>
                     
+                </div>
                 </div>  
                 <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
                     <thead>
@@ -66,7 +69,12 @@ include 'header.php';
                 <div class="col-md-3 pull-right text-right">
                     <h4><strong>Total : Rp. <?php echo $total;?></strong></h4>
                 </div>
+
+                <div class="col-md-2" style="margin: 10px 20px">
+                    <a href="daftar_request.php" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span><strong> Kembali</strong></a>
+                </div>
             </div>
+
 	    </div>
 
 <iframe id="printing-frame" name="print_frame" src="about:blank" style="display:none;"></iframe>
